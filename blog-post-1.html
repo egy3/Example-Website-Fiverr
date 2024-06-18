@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post 1 - My Colorful Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Colorful Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <article class="blog-post">
+            <header>
+                <h2>Blog Post Title 1</h2>
+            </header>
+            <div class="post-content">
+                <p>This is the content of your first blog post. Replace this with your actual blog content.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet augue ut maximus lacinia. Vestibulum nec felis sapien. Proin convallis nibh in metus molestie tempus.</p>
+                <p>Curabitur at bibendum dolor. Morbi ut dui euismod, elementum magna vel, fermentum justo. Integer bibendum mi ac venenatis commodo. Suspendisse ac dolor quis nisi condimentum dapibus.</p>
+                <p>Nullam sit amet justo euismod, vestibulum urna ac, efficitur risus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+            </div>
+            <footer>
+                <p class="published-on">Published on <time datetime="2024-06-20">June 20, 2024</time> by John Doe</p>
+                <div class="actions">
+                    <button class="btn-like"><i class="fas fa-thumbs-up"></i> Like <span id="likeCount1">0</span></button>
+                    <button class="btn-comment"><i class="fas fa-comment"></i> Comment <span id="commentCount1">0</span></button>
+                </div>
+                <div class="comment-section">
+                    <h3>
+                        Comments
+                        <i class="fas fa-chevron-down toggle-comments"></i>
+                    </h3>
+                    <ul class="comment-list hidden">
+                    <!-- Comments will be appended here -->
+                    </ul>
+                </div>
+                <div id="commentModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <h2>Write a Comment</h2>
+                        <form id="commentForm">
+                            <div class="form-group">
+                                <label for="commentName">Your Name:</label>
+                                <input type="text" id="commentName" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <label for="commentText">Comment:</label>
+                                <textarea id="commentText" placeholder="Write your comment here..." rows="4"></textarea>
+                            </div>
+                            <button type="submit" class="btn-primary">Submit Comment</button>
+                        </form>
+                    </div>
+                </div>
+            </footer>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p>&copy; 2024 My Colorful Blog. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
